@@ -17,7 +17,7 @@ First, you must create an input file.  Do for example
 
 For the impatient: do
 
-	$ ./linePLot.sh
+	$ ./linePlot.sh
 
 or
 
