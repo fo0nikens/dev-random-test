@@ -3,35 +3,35 @@
 import matplotlib.pyplot as plt
 import sys
 
-infile = sys.argv[1]
-f = open(infile,"r")
-x = []
-x2 = []
-x3 = []
-v = []
+index = []
+point = []
+trash = []
+hexPoint = []
 
-for line in f:
-  x += line.split(' ')
-
-k = 1
-for item in x:
-  if len(item) > 3:
+def populateVectors(item):
+  if len(item) == 8:
     pass
-  else:
-    x2.append(item.strip('\n'))
-    v.append(int(k))
-    k += 1
+  elif len(item) == 2:
+    hexPoint.append(item)
+  elif len(item) > 8:
+    trash.append(item)
 
-for item in x2:
-  x3.append(int(item,16))
+with open(sys.argv[1], 'r') as f:
+  for line in f:
+    handle = line.split(' ')
+    for x in handle:
+      populateVectors(x)
 
-# lenth check
-#print(len(x2))
-#print(len(v))
+for x in hexPoint:
+  try:
+    point.append(int(x, 16))
+  except ValueError:
+    pass
 
-# ensure no newline characters remain in x2 vector
-#for item in x2:
- # print(item)
+k = 0
+for item in point: 
+  index.append(int(k))
+  k +=1
 
-plt.plot(v,x3)
+plt.plot(index, point, )
 plt.show()
