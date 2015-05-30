@@ -18,8 +18,7 @@ For the impatient: do
 
 	$ ./run.sh 
 
-to generate a plot right away.  Edit the block size and count parameters to adjust the plot.  You may need to change the first line of run.sh to work with your environment variables. Do 
+to generate a plot right away.  Edit the block size and count parameters to adjust the plot. Large block counts dont like to write in linux, unless you use /dev/urandom.  In OSX, /dev/random and /dev/urandom are identical.
 
-	$ which bash
+ 
 
-to find out what to put in that line.  
