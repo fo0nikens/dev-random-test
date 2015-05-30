@@ -17,9 +17,13 @@ First, you must create an input file.  Do for example
 
 For the impatient: do
 
-	$ ./run.sh 
+	$ ./linePLot.sh
 
-to generate a plot right away.  Edit the block size and count parameters to adjust the plot. Large block counts dont like to write in linux, unless you use /dev/urandom.  In OSX, /dev/random and /dev/urandom are identical.
+or
+
+	$ ./histogram.sh 
+
+to generate something right away.  Edit the block size and count parameters to adjust the plot. Large block counts dont like to write in linux, unless you use /dev/urandom.  In OSX, /dev/random and /dev/urandom are identical.
 
  
 
