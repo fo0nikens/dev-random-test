@@ -2,7 +2,8 @@
 
 /dev/random plotter
 
-## works on OSX.  Not tested on linux yet.
+## run-hex.sh works on OSX.  Not tested on linux yet.
+## run-octal still broken (problem with plotoct.py
 
 ##Requirements: matplotlib
 
