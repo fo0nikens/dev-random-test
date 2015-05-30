@@ -5,6 +5,6 @@
 # Linux users will have to reduce the block count or wait for more
 # entropy if /dev/random is used.
 
-dd if=/dev/urandom of=./randfile bs=64 count=10 && hexdump -C randfile > infile; ./hexLinePlot.py infile; rm randfile infile
+dd if=/dev/urandom of=./randfile bs=64 count=10 && hexdump -C randfile > infile; ./histogram.py infile; rm randfile infile
 
 
