@@ -33,5 +33,5 @@ for item in point:
   index.append(int(k))
   k +=1
 
-plt.plot(index, point, )
+plt.plot(index, point)
 plt.show()
