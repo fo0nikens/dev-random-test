@@ -2,11 +2,18 @@
 
 /dev/random plotter
 
-## run-hex.sh works on OSX.  Not tested on linux yet.
-## run-octal still broken (problem with plotoct.py
+## run-hex.sh works on OSX.  
 
-##Requirements: matplotlib
+Not tested on any linux yet.  The GNU hexdump default output is not compatible with plothex.py.  Not sure about od.  BSD may work.
 
+## run-octal still broken - problem with plotoct.py
+
+od will not work anywhere!!
+
+##Requirements: 
+* python
+* matplotlib
+* bash, I guess.  Use your favorite shell :)
 ## Run
 
 First, you must create an input file.  Do for example
