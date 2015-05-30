@@ -2,7 +2,6 @@
 
 import matplotlib.pyplot as plt
 import sys
-import os
 
 infile = sys.argv[1]
 f = open(infile,"r")
