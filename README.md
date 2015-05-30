@@ -11,9 +11,9 @@
 
 First, you must create an input file.  Do for example
 
-	$ dd if=/dev/random of=randfile bs=1024 count=2
-	$ hexdump -x randfile > infile
-	$ ./hexplot.py infile
+	$ dd if=/dev/urandom of=randfile bs=1024 count=20
+	$ hexdump -C randfile > infile
+	$ ./linePlot.py infile
 
 For the impatient: do
 
